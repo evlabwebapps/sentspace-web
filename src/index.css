@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sentencesInputContainer {
+  display: flex;
+  max-height: 250px;
+}
+
+.settingsInputContainer {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  margin-left: 20px;
+}
+
+.settingsCategory {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.settingsCategory label {
+  padding-left: 3px;
+}
