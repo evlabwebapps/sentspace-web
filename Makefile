@@ -6,3 +6,5 @@ docker-build: react-build
 
 docker-push: docker-build
 	docker push aamirov/evlabwebapps-sentspace:latest
+
+build-push: docker-build docker-push
