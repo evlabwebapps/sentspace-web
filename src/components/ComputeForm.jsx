@@ -111,16 +111,9 @@ export default function ComputeForm() {
         // This expression pulls all the checkbox statuses through refs
         // Inner reduce: For each input in each group build (id => checked) mapping.
         // Outer reduce: Reduce to make a single object from list of objects.
-        let configValues = settingsOptions.reduce(
-            (prev, current) => ({
-                ...prev,
-                ...current.inputs.reduce((prevInput, currentInput) => ({
-                    ...prevInput,
-                    [currentInput.id]: currentInput.ref.current.checked
-                }), {})
-            }),
-            {}
-        );
+        let configValues = settingsOptions.map(
+            group => group.inputs.filter(i => i.ref.current.checked).map(i => i.id)
+        ).flat();
 
         FeaturesService.createCalculationRequest(sentences, configValues).then(response => console.log(response));
     }, [textArea])

@@ -3,7 +3,7 @@ import http from "../http-common";
 
 
 const createCalculationRequest = (sentences, configValues) =>
-    http.post("/sentspace/requests/", { sentences: sentences, config: configValues });
+    http.post("/sentspace/requests/", { sentences: sentences, arguments: configValues });
 
 const FeaturesService = {
     createCalculationRequest,
