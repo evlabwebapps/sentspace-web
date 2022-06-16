@@ -2,5 +2,5 @@
 
 yarn build
 
-docker build --tag aamirov/evlabwebapps-sentspace:latest .
-docker push aamirov/evlabwebapps-sentspace:latest
+sudo docker build --tag fedorenkolanguagelab/evlabwebapps-sentspace:latest .
+sudo docker push fedorenkolanguagelab/evlabwebapps-sentspace:latest
