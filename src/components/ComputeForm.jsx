@@ -41,10 +41,23 @@ export default function ComputeForm() {
 
   const submitForm = useCallback(() => {
     const sentences = textArea.current.value.split('\n').filter(s => s.trim().length > 0);
+    console.log(settingsOptions, sentences, ConfigService, setSettingsOptions);
 
+        // _.map(settingsOptions, )
+        let dvals = [];
+        let ix = 0;
+        for (var k in settingsOptions) {
+          dvals[ix++] = {
+            "group": k,
+            "inputs": settingsOptions[k]
+          };
+        }
+        console.log(dvals);
         // This expression pulls all the checkbox statuses through refs
-        let configValues = settingsOptions.map(
+        let configValues = dvals.map(
+            // group => console.log(group)
             group => group.inputs.filter(i => i.ref.current.checked).map(i => i.id)
+            // group => group.filter(i => i.ref.current.checked).map(i => i.id)
         ).flat();
 
     console.log(configValues);
@@ -71,7 +84,7 @@ export default function ComputeForm() {
             cols="80"
             rows="10"
             placeholder={
-              "An apple is a fruit that can be green, red or yellow\n" +
+              "An apple is a fruit that can be green, red or yellow HEHE\n" +
               "Apples have thin skin, a sweet, crisp pulp, and seeds inside."
             }
             onChange={onTextareaChange}
@@ -82,6 +95,7 @@ export default function ComputeForm() {
           {_.map(settingsOptions, (checkboxes, settingsGroup) => (
             <div className="settingsCategory">
               <h4>{settingsGroup}</h4>
+              {/* {console.log(settingsOptions, checkboxes)} */}
               {checkboxes.map(input => (
                 <div className="settingsCheckbox">
                   <input type="checkbox" id={input.value} name={input.value} ref={input.ref = createRef()}/>

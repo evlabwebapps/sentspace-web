@@ -13,6 +13,7 @@ const getConfig = () =>
   ));
 
 const getCheckboxes = () =>
+  // http.get("/sentspace/checkboxes/").then(response => response.data);
   http.get("/sentspace/checkboxes/").then(response => _.groupBy(response.data, 'group'));
 
 const ConfigService = {
