@@ -7,7 +7,7 @@ import { routes } from "../routes";
 
 export default function Navigation() {
   return (
-    <Navbar bg="info" variant="dark">
+    <Navbar bg="dark" variant="dark">
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>
