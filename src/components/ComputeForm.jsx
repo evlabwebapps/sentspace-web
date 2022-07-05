@@ -42,9 +42,11 @@ export default function ComputeForm() {
   const submitForm = useCallback(() => {
     const sentences = textArea.current.value.split('\n').filter(s => s.trim().length > 0);
 
+        console.log(settingsOptions, _);
         // This expression pulls all the checkbox statuses through refs
-        let configValues = settingsOptions.map(
-            group => group.inputs.filter(i => i.ref.current.checked).map(i => i.id)
+        let configValues = _.map(
+          settingsOptions, 
+          group => group.filter(i => i.ref.current.checked).map(i => i.value)
         ).flat();
 
     console.log(configValues);

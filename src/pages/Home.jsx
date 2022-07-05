@@ -5,19 +5,28 @@ import {Container} from "react-bootstrap";
 export default function Home() {
     return (
         <Container>
-            <h1>Sentence Space Comparison (SentSpace)</h1>
+            {/* <h2>SentSpace</h2> */}
 
-            <p>
-                Obtain a set of diverse features for your sentences
-                Visualize your sentences in a high-dimensional feature space
-                Compare your sentences with existing corpora!
-            </p>
             <div className="alert alert-dark">
-                <h4 className="alert-heading">About this project</h4>
-                An open-science project to compute a diverse set of linguistic, syntactic, and semantic features for any
-                given sentence. Outputs summary statistics, visualizations, and comparisons to existing corpora
-                benchmarks.
+                <h4 className="alert-heading">Citation</h4>
+                    <b>SentSpace: Benchmarking and Evaluation of Text using Cognitively Motivated Lexical, Syntactic,
+                    and Semantic Features.</b>  
+                    <br />
+                    Tuckute G*, Sathe A*, Wang M^, Yoder H^, Shain C, and
+                    Fedorenko E. 
+                    Annual Meeting of the North American Association for Computational
+                    Linguistics (NAACL 2022), Seattle, WA. [
+                    <a href="https://sentspace.github.io/sentspace">github</a>, 
+                    <a href="https://github.com/sentspace/NAACL-HLT-2022/blob/main/NAACL_HLT_2022_SystemDemo_paper28_Camera_Ready.pdf"> paper</a>]
             </div>
+
+            {/* <div className="alert alert-dark">
+                <h4 className="alert-heading">About this project</h4>
+                An open-science project to compute a diverse set of linguistic features for a given
+                sentence. Produces summary statistics, visualizations, and comparisons to existing
+                corpora
+                benchmarks.
+            </div> */}
         </Container>
     )
 }
