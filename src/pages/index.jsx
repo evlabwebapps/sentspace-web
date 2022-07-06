@@ -8,7 +8,7 @@ import Usage from "./Usage";
 export {
     ComputeFeatures,
     // CorporaInfo,
-    // FeatureInfo,
+    FeatureInfo,
     Home,
     Usage
 }

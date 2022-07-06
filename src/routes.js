@@ -1,7 +1,7 @@
 import {
     ComputeFeatures,
     // CorporaInfo,
-    // FeatureInfo,
+    FeatureInfo,
     Home,
     Usage
 } from "./pages";
@@ -20,12 +20,12 @@ export const routes = [
         exact: true,
         child: ComputeFeatures
     },
-    // {
-    //     path: "/feature-info",
-    //     label: "Feature Information",
-    //     exact: true,
-    //     child: FeatureInfo
-    // },
+    {
+        path: "/feature-info",
+        label: "Feature Descriptions",
+        exact: true,
+        child: FeatureInfo
+    },
     // {
     //     path: "/corpora-info",
     //     label: "Corpora Information",
