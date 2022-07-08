@@ -2,27 +2,28 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 
-const citation_text = `
-    @inproceedings{tuckute-sathe-etal-2022-sentspace,
-                    title = "SentSpace: Benchmarking and Evaluation of Text using 
-                             Cognitively Motivated Lexical, Syntactic, and Semantic Features",
-                    author = "Tuckute*, Greta and 
-                              Sathe*, Aalok and 
-                              Wang^, Mingye and 
-                              Yoder^, Harley and 
-                              Shain, Cory and 
-                              Fedorenko, Evelina",
-                    booktitle = "Proceedings of the 2022 Conference of the 
-                        North American Chapter of the Association for Computational Linguistics: 
-                        Human Language Technologies (NAACL-HLT 2022)", 
-                    month = "jul",
-                    year = "2022",
-                    address = "Seattle, WA and online",
-                    publisher = "Association for Computational Linguistics",
-                    url = "https://github.com/sentspace/NAACL-HLT-2022/blob/main/NAACL_HLT_2022_SystemDemo_paper28_Camera_Ready.pdf",
-                    doi = "TBD",
-                    pages = "TBD",
-                }
+const bibtex = `
+    @inproceedings{
+        tuckute-sathe-etal-2022-sentspace,
+        title = "SentSpace: Benchmarking and Evaluation of Text using Cognitively Motivated Lexical,
+                 Syntactic, and Semantic Features",
+        author = "Tuckute*, Greta and 
+                  Sathe*, Aalok and 
+                  Wang^, Mingye and 
+                  Yoder^, Harley and 
+                  Shain, Cory and 
+                  Fedorenko, Evelina",
+        booktitle = "Proceedings of the 2022 Conference of the North American Chapter of
+                     the Association for Computational Linguistics: Human Language
+                     Technologies (NAACL-HLT 2022)", 
+        month = "jul",
+        year = "2022",
+        address = "Seattle, WA, USA",
+        publisher = "Association for Computational Linguistics",
+        url = "https://github.com/sentspace/NAACL-HLT-2022/blob/main/NAACL_HLT_2022_SystemDemo_paper28_Camera_Ready.pdf",
+        doi = "TBD",
+        pages = "TBD",
+    }
 `
 
 export default function Home() {
@@ -31,78 +32,52 @@ export default function Home() {
             {/* <h2>SentSpace</h2> */}
 
    
+            <h5>Welcome to   <span style={{"fontFamily": "monospace"}}>  SentSpace</span>  !</h5>
 
-            <h4>What is <i>SentSpace</i>?</h4>
+              <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   is an open and easy-to-use tool for characterizing text using diverse features related to how humans process and understand language.
 
-            <i>SentSpace</i> is an open and easy-to-use tool for characterizing text using diverse features
-            related to how humans process and understand language.
+            <br/> <br/>
+            <p><h3>What is   <span style={{"fontFamily": "monospace"}}>  SentSpace</span>  ?</h3></p>
+            <ul>
+                <li>  <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   is a modular, open-source framework for streamlined evaluation of text.</li>
+                <li>  <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   characterizes textual input using cognitively motivated lexical, syntactic, and semantic features computed at the token- as well as phrase- and sentence level.&nbsp;</li>
+                <li>Features are derived from psycholinguistic experiments, large-scale corpora, and theoretically motivated models of language processing.</li>
+            </ul>
 
-            <li> <i>SentSpace</i> is a modular, open-source framework for streamlined evaluation of text. </li>
-            <li> <i>SentSpace</i> characterizes textual input using cognitively motivated lexical, syntactic, and semantic features computed at the token- as well as phrase- and sentence level. </li>
-            <li> Features are derived from psycholinguistic experiments, large-scale corpora, and theoretically motivated models of language processing. </li>
+            <p><h3>What can I use   <span style={{ "fontFamily": "monospace" }}>SentSpace</span>   for?</h3></p>
+            <p>  <span style={{ "fontFamily": "monospace" }}>SentSpace</span>   allows for quantification and comparison of different types of text. Current research in fields such as natural language processing, cognitive science, neuroscience, artificial intelligence, and the social sciences relies on numerical representations of text for many purposes.   <span style={{ "fontFamily": "monospace" }}>SentSpace</span>   provides streamlined evaluation of textual input to yield useful numerical representations of words, phrases, and sentences.</p>
 
-
-            <br /> <br />
-            <h4> What can I use <i>SentSpace</i> for? </h4>
-
-            <i>SentSpace</i> allows for quantification and comparison of different types of text. Current
-            research in fields such as natural language processing, cognitive science, neuroscience,
-            artificial intelligence, and the social sciences relies on numerical representations of
-            text for many purposes. <i>SentSpace</i> provides streamlined evaluation of textual input to
-            yield useful numerical representations of words, phrases, and sentences.
-
-            Examples of questions that can be answered using these <i>SentSpace</i> representations are:
-            How does text generated by an artificial language model compare to that generated by
-            humans? How do utterances produced by neurotypicals compare to those of individuals with
-            communication disorders?
-
-            <li><b>Text Generation/Dialog Systems</b>: <i>SentSpace</i> features of interest can be used to guide artificial
-            systems to generate text that is more human-like and/or has certain desired properties.</li>
-            <li><b>Experimental Sciences (Neuroscience, Cognitive Science)</b>: <i>SentSpace</i> can be used to evaluate the
-            normativity of stimuli/datasets.</li>  
-            <li><b>NLP/NLU</b>: high-dimensional vector embeddings from large pre-trained
-            language models have revolutionized machine learning within the past few years. <i>SentSpace</i> can serve
-            as a complementary resource that can provide interpretability and grounding to these widely used
-            high-dimensional embeddings.</li>
+            <p>Examples of questions that can be answered using   <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   representations are:&nbsp;</p>
+            <li><strong>Text Generation/Dialog Systems. </strong><em>How does text generated by artificial language models compare to that generated by humans?</em>
+            <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   features of interest can be used to compare text generated by artificial systems and humans. Moreover, these features can be used to guide artificial systems to generate text that is more human-like and/or has certain desired properties.</li>
+            <li><strong>Language Model Grounding and Interpretability. </strong><em>What psycholinguistic information do high-dimensional vector representations from pre-trained language models capture?</em> <br/>
+              <span style={{"fontFamily": "monospace"}}>  SentSpace</span>  features allow for interpretation of high-dimensional vector representations from large pre-trained language models.   <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   serves as a complementary resource that can provide grounding to these widely used high-dimensional representations.</li>
+            <li><strong>Experimental Sciences. </strong><em>How naturalistic is a set of experimental materials?</em>
+              <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   can be used to evaluate the normativity of experimental stimuli in experimental sciences such as neuroscience, cognitive science, and linguistics.</li>
+            <li><strong>Analyzing Human Utterances</strong>. <em>How do utterances produced by different human populations differ from each other?</em>
+              <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   can help meaningfully quantify divergence in utterances produced by different human populations such as e.g. neurotypical individuals and individuals with communication disorders.&nbsp;</li>
 
 
-            <br />
-
-            <h4>What types of features does <i>SentSpace</i> provide?</h4>
-    
-            <i>SentSpace</i> focuses on interpretable and cognitively motivated linguistic features.
-            These features have been shown to be relevant to language processing in humans.  The
-            <i>SentSpace</i> features fall into two core modules (sentence spaces): Lexical and
-            Contextual.
-
-            The Lexical module operates on individual lexical items (words) within a sentence and computes a
-            summary representation by combining information across the words in the sentence. This module
-            includes features such as frequency, concreteness, age of acquisition, lexical decision latency,
-            contextual diversity, etc.
-
-            The Contextual module operates on sentences as whole and includes syntactic features,
-            such as the depth of center embedding, and other features, like sentence-level
-            sentiment.
+            <br/><br/>
+            <h3>What types of features does  <span style={{"fontFamily": "monospace"}}>  SentSpace</span>  provide?</h3> 
+              <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   focuses on interpretable and cognitively motivated linguistic features. These features have been shown to be relevant to language processing in humans.
+            <br/>
+            The   <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   features fall into two core modules (<em>sentence spaces</em>): Lexical and Contextual.
+            The Lexical module operates on individual lexical items (words) within a sentence and computes a summary representation by combining information across the words in the sentence. This module includes features such as frequency, concreteness, age of acquisition, lexical decision latency, contextual diversity, etc.
+            The Contextual module operates on sentences as whole and includes syntactic features, such as the depth of center embedding, and other features, like sentence-level sentiment.
+            New modules can be easily added to   <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   to provide additional ways to characterize text.
+            <p>In this manner,   <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   provides a quantitative and interpretable
+            representation of any sentence. For a full description of features currently supported
+            by   <span style={{"fontFamily": "monospace"}}>  SentSpace</span>  , please navigate to the tab   <span style={{ "text-decoration": "underline" }}>Feature Descriptions</span>.</p>
             
-            New modules can be easily added to <i>SentSpace</i> to provide additional ways to characterize
-            text.  In this manner, <i>SentSpace</i> provides a quantitative and interpretable
-            representation of any sentence.  For a full description of features currently supported
-            by <i>SentSpace</i>, please navigate to the tab Feature Descriptions.
+            <br/><br/>
+            <p><h3>How can I access  <span style={{"fontFamily": "monospace"}}>  SentSpace</span>  ?</h3></p>
+            <p>  <span style={{"fontFamily": "monospace"}}>  SentSpace</span>  is available as a Python package which can be accessed through a command line interface or imported as a module. We also provide a hosted front-end, where anyone can access   <span style={{"fontFamily": "monospace"}}>  SentSpace</span>  without any need for installation, compute, or Python experience.</p>
+            <p>Please find a guide for how to use   <span style={{"fontFamily": "monospace"}}>  SentSpace</span>   under   <span style={{ "text-decoration": "underline" }}>Usage</span>  .</p>
 
-
-            <br /> <br />
-            <h4> How can I access <i>SentSpace</i>?  </h4>
-
-            <i>SentSpace</i> is available as a Python package which can be accessed through a command line
-            interface or imported as a module. We also provide a hosted front-end, where anyone can
-            access <i>SentSpace</i> without any need for installation, compute or Python experience.  Please
-            find a guide for how to use <i>SentSpace</i> under Usage.
-
-
-            <br />
             <br /> <br />
             <div className="alert alert-dark">
-                <h4 className="alert-heading">Citation</h4>
+                <h3 className="alert-heading">Citation</h3>
 
                 We thank the authors of publicly available datasets that we have been able to use in
                 SentSpace.
@@ -117,9 +92,9 @@ export default function Home() {
 
                 <h5> BibTeX </h5>
 
-                <pre>
-                {citation_text}
-                </pre>
+                <code style={{"display": "block", "white-space": "pre-wrap"}}>
+                {bibtex}
+                </code>
 
 
                 <br />

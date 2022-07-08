@@ -6,9 +6,14 @@ export default function FeatureInfo() {
     return (
         <Container>
 
+            The SentSpace features fall into two core modules (sentence spaces): Lexical and Contextual. The features that are currently supported are described below.
+
+            <br /><br />
 
             <h2 id="lexical">Lexical Features</h2>
-
+            The Lexical module consists of features that pertain to individual lexical items, words,
+            regardless of the context in which they appear.
+            
             <p><strong>Age of Acquisition</strong> Age of acquisition is a metric that estimates when a
                 person acquired (i.e., understood) a given word. Participants were asked for each word to enter
                 the age at which they thought they had learned the word even if they could not use, read, or
@@ -153,7 +158,7 @@ export default function FeatureInfo() {
                 similar contexts. Hoffman et al. thus quantify the degree to which the different contexts
                 associated with a given word vary in their meanings. Norms were available for 31,739 English
                 words.
-                Obtained from: <div><a href="https://link.springer.com/article/10.3758/s13428-012-0278-x#SecESM1" target="_blank" rel="noopener">https://link.springer.com/article/10.3758/s13428-012-0278-x#SecESM1</a></div>.
+                Obtained from: <div><a href="https://link.springer.com/article/10.3758/s13428-012-0278-x#SecESM1" target="_blank" rel="noopener">https://link.springer.com/article/10.3758/s13428-012-0278-x#SecESM1</a></div>
             </p>
 
             <p><strong>Word Length</strong> Word length as measured by
@@ -174,9 +179,14 @@ export default function FeatureInfo() {
 
 
             <h2 id="contextual">Contextual Features</h2>
-            <p>The contextual features broadly fall into two
-                categories: syntactic (denoted by Contextual_syntax) and miscellaneous (denoted by
-                Contextual_misc). Contextual features are ordered alphabetically.&nbsp;</p>
+            The Contextual module consists of features that quantify contextual and combinatorial
+            inter-word relations that are not captured by individual lexical items. This module
+            encompasses features that relate to the syntactic structure of the sentence
+            (<var> Contextual_syntax </var> features) and features that apply to the sentence context
+            but are not (exclusively) related to syntactic structure (<var> Contextual_misc </var>
+            features).
+
+            <br /><br />
 
             <p><strong>Content
                 Word Ratio</strong> Lexical density is the proportion of content words to function words in a
