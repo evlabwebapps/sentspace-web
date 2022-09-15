@@ -2,6 +2,7 @@ import {Container, Nav, Navbar} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import logo from "../images/logo.png";
 import logoSentspace from "../images/logo_sentspace.png";
+import logoMIT from "../images/mit.png";
 import React from "react";
 import { routes } from "../routes";
 
@@ -12,8 +13,16 @@ export default function Navigation() {
         <LinkContainer to="/">
           <Navbar.Brand>
             <img
+              src={logoMIT}
+              width="50"
+              height="30"
+              className="d-inline-block align-top"
+              alt="MIT Logo"
+              style={{marginRight: "10px"}}
+            />
+            <img
               src={logo}
-              width="30"
+              width="40"
               height="30"
               className="d-inline-block align-top"
               alt="EvLab Logo"
@@ -24,9 +33,9 @@ export default function Navigation() {
               width="30"
               height="30"
               className="d-inline-block align-top"
-              alt="EvLab Logo"
+              alt="SentSpace Logo"
               style={{marginRight: "10px"}}
-            />
+            />   
             SentSpace
           </Navbar.Brand>
         </LinkContainer>
