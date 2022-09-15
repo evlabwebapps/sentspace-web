@@ -6,10 +6,10 @@ export default function FeatureInfo() {
     return (
         <Container>
 
-            The <span style={{"fontFamily": "monospace"}}>  SentSpace</span> features fall into two
+            The <span style={{ "fontFamily": "monospace" }}>  SentSpace</span> features fall into two
             core modules (sentence spaces): Lexical and Contextual. The features that are currently
             supported are described below.
-            
+
             <br /><br />
 
             <h2 id="lexical">Lexical Features</h2>
@@ -18,7 +18,9 @@ export default function FeatureInfo() {
             The Lexical module operates on individual lexical items (words) within a sentence and
             computes a summary representation by combining information across the words in the
             sentence.
-            
+
+            <br />
+
             <p><strong>Age of Acquisition</strong>. Age of acquisition is a metric that estimates when a
                 person acquired (i.e., understood) a given word. Participants were asked for each word to enter
                 the age at which they thought they had learned the word even if they could not use, read, or
@@ -184,12 +186,12 @@ export default function FeatureInfo() {
 
 
             <h2 id="contextual">Contextual Features</h2>
-                The Contextual module consists of features that quantify contextual and combinatorial
-                inter-word relations that are not captured by individual lexical items. This module
-                encompasses features that relate to the syntactic structure of the sentence
-                (<var> Contextual_syntax </var> features) and features that apply to the sentence context
-                but are not (exclusively) related to syntactic structure (<var> Contextual_misc </var>
-                features).
+            The Contextual module consists of features that quantify contextual and combinatorial
+            inter-word relations that are not captured by individual lexical items. This module
+            encompasses features that relate to the syntactic structure of the sentence
+            (<var>Contextual_syntax </var> features) and features that apply to the sentence context
+            but are not (exclusively) related to syntactic structure (<var>Contextual_misc </var>
+            features).
 
             <br /><br />
 
@@ -252,6 +254,59 @@ export default function FeatureInfo() {
                 binary rules occur. The code framework to compute the features was obtained from Kyle Mahowald
                 (preprint to appear).</p>
 
+
+            <h2 id="lexical">References</h2>
+
+            <li>Brysbaert, M., Warriner, A. B., & Kuperman, V. (2014). Concreteness ratings for 40
+                thousand generally known English word lemmas. Behavior research methods, 46(3), 904-911.
+            </li>
+            <li>Brysbaert, M., Mandera, P., McCormick, S. F., & Keuleers, E. (2019). Word
+                prevalence norms for 62,000 English lemmas. Behavior research methods, 51(2), 467-479.
+            </li>
+            <li>Brysbaert, M., & New, B. (2009). Moving beyond Kučera and Francis: A critical
+                evaluation of current word frequency norms and the introduction of a new and improved
+                word frequency measure for American English. Behavior research methods, 41(4), 977-990.
+            </li>
+            <li>Diveica, V., Pexman, P. M., & Binney, R. J. (2022). Quantifying social semantics: An
+                inclusive definition of socialness and ratings for 8388 English words. Behavior Research
+                Methods, 1-13.            </li>
+            <li>Gibson, E. (2000). The dependency locality theory: A distance-based theory of
+                linguistic complexity. Image, language, brain, 2000, 95-126.          </li>
+            <li>Kuperman, V., Stadthagen-Gonzalez, H., & Brysbaert, M. (2012). Age-of-acquisition
+                ratings for 30,000 English words. Behavior research methods, 44(4), 978-990.    </li>
+            <li>Mak, M. H., & Twitchell, H. (2020). Evidence for preferential attachment: Words that
+                are more well connected in semantic networks are better at acquiring new links in
+                paired-associate learning. Psychonomic Bulletin & Review, 27(5), 1059-1069. </li>
+            <li>Marelli, M., & Amenta, S. (2018). A database of orthography-semantics consistency
+                (OSC) estimates for 15,017 English words. Behavior research methods, 50(4), 1482-1495.
+            </li>
+            <li>D.A. Medler and J.R. Binder. 2005. Mcword: An online orthographic database of the
+                english language.  <a
+                    href="http://www.neuro.mcw.edu/mcword/">http://www.neuro.mcw.edu/mcword/</a>.
+            </li>
+            <li>Miller, G. A. (1995). WordNet: a lexical database for English. Communications of the
+                ACM, 38(11), 39-41.                      </li>
+            <li>Saif Mohammad. 2018. Obtaining Reliable Human Ratings of Valence, Arousal, and
+                Dominance for 20,000 English Words. In Proceedings of the 56th Annual Meeting of the
+                Association for Computational Linguistics (Volume 1: Long Papers), pages 174-184,
+                Melbourne, Australia. Association for Computational Linguistics.
+            </li>
+            <li>Pexman, P. M., Muraki, E., Sidhu, D. M., Siakaluk, P. D., & Yap, M. J. (2019).
+                Quantifying sensorimotor experience: Body-object interaction ratings for more than 9,000
+                English words. Behavior research methods, 51(2), 453-466.   </li>
+            <li>Piantadosi, S. T., Tily, H., & Gibson, E. (2011). Word lengths are optimized for
+                efficient communication. Proceedings of the National Academy of Sciences, 108(9),
+                3526-3529.       </li>
+            <li>Rasmussen, N. E., & Schuler, W. (2018). Left‐corner parsing with distributed
+                associative memory produces surprisal and locality effects. Cognitive science, 42,
+                1009-1042. </li>
+            <li>Virpioja, S., Smit, P., Grönroos, S. A., & Kurimo, M. (2013). Morfessor 2.0: Python
+                implementation and extensions for Morfessor Baseline.</li>
+
+
         </Container>
     )
 }
+
+
+
